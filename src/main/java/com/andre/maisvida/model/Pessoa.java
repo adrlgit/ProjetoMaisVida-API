@@ -21,8 +21,6 @@ public class Pessoa {
 	
 	private String nome;
 	
-	private String genero;
-	
 	private LocalDate dataCadastro;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
@@ -35,12 +33,11 @@ public class Pessoa {
 		super();
 	}
 	
-	public Pessoa(Long id, String nome, String genero, LocalDate dataCadastro, Estado estado,
+	public Pessoa(Long id, String nome, LocalDate dataCadastro, Estado estado,
 			List<Documento> documento) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.genero = genero;
 		this.dataCadastro = dataCadastro;
 		this.estado = estado;
 		this.documento = documento;
@@ -62,14 +59,6 @@ public class Pessoa {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public void setGenero(String genero) {
-		this.genero = genero;
 	}
 
 	public LocalDate getDataCadastro() {

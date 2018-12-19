@@ -12,20 +12,17 @@ public class PessoaDTO {
 	
 	private String nome;
 	
-	private String genero;
-	
 	private LocalDate dataCadastro;
 	
 	private Estado estado;
 	
 	private List<Documento> documento;
 
-	public PessoaDTO(Long id, String nome, String genero, LocalDate dataCadastro, Estado estado,
+	public PessoaDTO(Long id, String nome, LocalDate dataCadastro, Estado estado,
 			List<Documento> documento) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.genero = genero;
 		this.dataCadastro = dataCadastro;
 		this.estado = estado;
 		this.documento = documento;
@@ -45,14 +42,6 @@ public class PessoaDTO {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public void setGenero(String genero) {
-		this.genero = genero;
 	}
 
 	public LocalDate getDataCadastro() {

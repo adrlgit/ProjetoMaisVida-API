@@ -21,7 +21,7 @@ import com.andre.maisvida.dto.PessoaDTO;
 import com.andre.maisvida.model.repository.PessoaRepository;
 import com.andre.maisvida.service.PessoaService;
 
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(value = "pessoas")
 public class PessoaResource {

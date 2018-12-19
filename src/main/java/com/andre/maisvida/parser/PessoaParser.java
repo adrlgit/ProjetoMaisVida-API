@@ -6,10 +6,10 @@ import com.andre.maisvida.model.Pessoa;
 public class PessoaParser {
 
 	public static PessoaDTO toDTO(Pessoa pessoa) {
-		return new PessoaDTO(pessoa.getId(), pessoa.getNome(), pessoa.getGenero(), pessoa.getDataCadastro(), pessoa.getEstado(), pessoa.getDocumento());
+		return new PessoaDTO(pessoa.getId(), pessoa.getNome(), pessoa.getDataCadastro(), pessoa.getEstado(), pessoa.getDocumento());
 	}
 	
 	public static  Pessoa toEntity(PessoaDTO pessoaDTO) {
-		return new Pessoa(pessoaDTO.getId(), pessoaDTO.getNome(), pessoaDTO.getGenero(), pessoaDTO.getDataCadastro(), pessoaDTO.getEstado(), pessoaDTO.getDocumento());
+		return new Pessoa(pessoaDTO.getId(), pessoaDTO.getNome(), pessoaDTO.getDataCadastro(), pessoaDTO.getEstado(), pessoaDTO.getDocumento());
 	}
 }
